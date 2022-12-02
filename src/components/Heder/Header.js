@@ -1,9 +1,11 @@
+import React from 'react';
 import style from './Header.module.css';
+import HeaderMenu from '../HeaderMenu';
 
 function Header() {
   return (
     <header>
-      <h2 className={style.header}>Hello</h2>
+      <HeaderMenu />
     </header>
   );
 }
