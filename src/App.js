@@ -7,7 +7,8 @@ import Form from './components/Form';
 import ListView from './components/ListView';
 import './App.css';
 import dbData from './db/db.json';
-import ClockComponent from './components/Clock'
+import ClockComponent from './components/Clock';
+import CalendarComponent from './components/Calendar/CalendarComponent'
 
 class App extends Component {
   state = {
@@ -46,6 +47,7 @@ class App extends Component {
           {/* <Header /> */}
           <Form onSubmit={this.handleGetData} />
           <ClockComponent/>
+          <CalendarComponent/>
           <ListView
             dataShow={this.state.data}
             onDelete={this.handleDeleteEntry}
