@@ -7,6 +7,7 @@ import Form from './components/Form';
 import ListView from './components/ListView';
 import './App.css';
 import dbData from './db/db.json';
+import ClockComponent from './components/Clock'
 
 class App extends Component {
   state = {
@@ -44,6 +45,7 @@ class App extends Component {
         <Container>
           {/* <Header /> */}
           <Form onSubmit={this.handleGetData} />
+          <ClockComponent/>
           <ListView
             dataShow={this.state.data}
             onDelete={this.handleDeleteEntry}
