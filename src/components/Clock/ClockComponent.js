@@ -12,14 +12,7 @@ const DigitalClock = () => {
     return () => clearInterval(timer);
   }, []);
 
-//   const formatTime = (time) => {
-//     return time.toLocaleString('en-US', {
-//       hour: 'numeric',
-//       minute: 'numeric',
-//       second: 'numeric',
-//       hour12: false,
-//     });
-//   };
+
 
   const getSecondsGradientColor = () => {
     const seconds = currentTime.getSeconds();
